@@ -1,0 +1,15 @@
+{
+	"name": "adfte1",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b9093c77-5d27-4d28-b2eb-cbf4a1b6a497",
+		"tenantId": "8c88df11-b77b-4f1f-b4d2-3b2d8cf321fd"
+	}
+}
