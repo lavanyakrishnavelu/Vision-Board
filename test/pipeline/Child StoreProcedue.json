@@ -1,0 +1,45 @@
+{
+	"name": "Child StoreProcedue",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure_Wmrk",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[UpdateWatermark]",
+					"storedProcedureParameters": {
+						"TableSchema": {
+							"value": "@pipeline().parameters.TableSchema",
+							"type": "String"
+						},
+						"TableName": {
+							"value": {
+								"value": "@pipeline().parameters.TableName",
+								"type": "Expression"
+							},
+							"type": "String"
+						},
+						"WatermarkColumn": {
+							"value": "",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_OnPremSqlServer",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"annotations": []
+	}
+}
