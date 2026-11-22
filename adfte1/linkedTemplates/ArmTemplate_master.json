@@ -11,13 +11,53 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_AzureDataLakeStorage1'"
 		},
+		"ls_AzureSqlDatabase1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_AzureSqlDatabase1'"
+		},
+		"ls_OnPremSqlServer_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_OnPremSqlServer'"
+		},
 		"ls_SqlServer1_password": {
 			"type": "secureString",
 			"metadata": "Secure string for 'password' of 'ls_SqlServer1'"
 		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+			"type": "string",
+			"defaultValue": "secreteAzure"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"type": "string",
+			"defaultValue": "https://Keyvalutneww.vault.azure.net/"
+		},
 		"ls_AzureDataLakeStorage1_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://adlsgen2t2.dfs.core.windows.net/"
+		},
+		"ls_AzureSqlDatabase1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "sql-serverr1.database.windows.net"
+		},
+		"ls_AzureSqlDatabase1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sqldatabasee1"
+		},
+		"ls_AzureSqlDatabase1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sqlserverr1"
+		},
+		"ls_OnPremSqlServer_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "DESKTOP-U8LK3KU"
+		},
+		"ls_OnPremSqlServer_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "LegacyMigration"
+		},
+		"ls_OnPremSqlServer_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "sa"
 		},
 		"ls_SqlServer1_properties_typeProperties_server": {
 			"type": "string",
@@ -61,11 +101,41 @@
 					"ls_AzureDataLakeStorage1_accountKey": {
 						"value": "[parameters('ls_AzureDataLakeStorage1_accountKey')]"
 					},
+					"ls_AzureSqlDatabase1_password": {
+						"value": "[parameters('ls_AzureSqlDatabase1_password')]"
+					},
+					"ls_OnPremSqlServer_password": {
+						"value": "[parameters('ls_OnPremSqlServer_password')]"
+					},
 					"ls_SqlServer1_password": {
 						"value": "[parameters('ls_SqlServer1_password')]"
 					},
+					"AzureKeyVault1_properties_typeProperties_baseUrl": {
+						"value": "[parameters('AzureKeyVault1_properties_typeProperties_baseUrl')]"
+					},
 					"ls_AzureDataLakeStorage1_properties_typeProperties_url": {
 						"value": "[parameters('ls_AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"ls_AzureSqlDatabase1_properties_typeProperties_server": {
+						"value": "[parameters('ls_AzureSqlDatabase1_properties_typeProperties_server')]"
+					},
+					"ls_AzureSqlDatabase1_properties_typeProperties_database": {
+						"value": "[parameters('ls_AzureSqlDatabase1_properties_typeProperties_database')]"
+					},
+					"ls_AzureSqlDatabase1_properties_typeProperties_userName": {
+						"value": "[parameters('ls_AzureSqlDatabase1_properties_typeProperties_userName')]"
+					},
+					"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+						"value": "[parameters('AzureBlobStorage1_properties_typeProperties_connectionString_secretName')]"
+					},
+					"ls_OnPremSqlServer_properties_typeProperties_server": {
+						"value": "[parameters('ls_OnPremSqlServer_properties_typeProperties_server')]"
+					},
+					"ls_OnPremSqlServer_properties_typeProperties_database": {
+						"value": "[parameters('ls_OnPremSqlServer_properties_typeProperties_database')]"
+					},
+					"ls_OnPremSqlServer_properties_typeProperties_userName": {
+						"value": "[parameters('ls_OnPremSqlServer_properties_typeProperties_userName')]"
 					},
 					"ls_SqlServer1_properties_typeProperties_server": {
 						"value": "[parameters('ls_SqlServer1_properties_typeProperties_server')]"

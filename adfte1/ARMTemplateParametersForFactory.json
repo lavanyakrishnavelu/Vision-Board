@@ -8,11 +8,41 @@
 		"ls_AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
+		"ls_AzureSqlDatabase1_password": {
+			"value": ""
+		},
+		"ls_OnPremSqlServer_password": {
+			"value": ""
+		},
 		"ls_SqlServer1_password": {
 			"value": ""
 		},
+		"AzureBlobStorage1_properties_typeProperties_connectionString_secretName": {
+			"value": "secreteAzure"
+		},
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://Keyvalutneww.vault.azure.net/"
+		},
 		"ls_AzureDataLakeStorage1_properties_typeProperties_url": {
 			"value": "https://adlsgen2t2.dfs.core.windows.net/"
+		},
+		"ls_AzureSqlDatabase1_properties_typeProperties_server": {
+			"value": "sql-serverr1.database.windows.net"
+		},
+		"ls_AzureSqlDatabase1_properties_typeProperties_database": {
+			"value": "sqldatabasee1"
+		},
+		"ls_AzureSqlDatabase1_properties_typeProperties_userName": {
+			"value": "sqlserverr1"
+		},
+		"ls_OnPremSqlServer_properties_typeProperties_server": {
+			"value": "DESKTOP-U8LK3KU"
+		},
+		"ls_OnPremSqlServer_properties_typeProperties_database": {
+			"value": "LegacyMigration"
+		},
+		"ls_OnPremSqlServer_properties_typeProperties_userName": {
+			"value": "sa"
 		},
 		"ls_SqlServer1_properties_typeProperties_server": {
 			"value": "DESKTOP-U8LK3KU"
